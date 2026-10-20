@@ -1,0 +1,10 @@
+{
+  "name": "海上浮城",
+  "short_name": "海上浮城",
+  "start_url": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#22477f",
+  "theme_color": "#22477f",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#22477f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="海上浮城" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon.svg" />
+  <title>海上浮城</title>
+</head>
+<body>
+  <div id="app">
+    <main id="field"><canvas id="cv"></canvas></main>
+
+    <header id="hud">
+      <div class="hudrow">
+        <div id="hqbadge" class="hqbadge"><b></b><small>浮城</small></div>
+        <div class="pills">
+          <div class="pill" id="pop"></div>
+          <div class="pill" id="coins"></div>
+        </div>
+        <button id="mute" class="roundbtn mute" aria-label="静音"><span></span></button>
+      </div>
+      <div class="morale"><span id="moraleicon"></span><div class="mbar"><i id="moralebar"></i></div><small id="moraletext"></small></div>
+    </header>
+
+    <aside id="resbar"></aside>
+    <div id="hint"></div>
+
+    <div id="quest"></div>
+    <nav id="bottom">
+      <button data-tab="build" class="nb n-build"><img data-b="tent" alt=""><span>建造</span></button>
+      <button data-tab="raft" class="nb n-raft"><img data-i="wood" alt=""><span>扩建</span></button>
+      <button data-tab="orders" class="nb n-orders"><img data-i="coins" alt=""><span>订单</span><i class="badge"></i></button>
+      <button data-tab="city" class="nb n-city"><img data-b="hq" alt=""><span>浮城</span></button>
+    </nav>
+    <section id="sheet"></section>
+    <div id="modal" hidden></div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
